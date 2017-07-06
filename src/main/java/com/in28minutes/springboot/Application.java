@@ -3,7 +3,9 @@ package com.in28minutes.springboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan("com.in28minutes")
 @SpringBootApplication
 public class Application {
 
