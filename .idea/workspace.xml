@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84460de4-926a-4904-b3ba-a543151a0532" name="Default" comment="">
+    <list default="true" id="84460de4-926a-4904-b3ba-a543151a0532" name="Default" comment="added">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_0_RELEASE.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first-springboot-project.iml" afterPath="$PROJECT_DIR$/first-springboot-project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,12 +29,12 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
-                <marker date="1499350944111" expanded="true" signature="90881:90898" ph="..." />
-                <marker date="1499350944111" expanded="true" signature="90881:90916" ph="..." />
-                <marker date="1499350944111" expanded="true" signature="90881:90929" ph="..." />
+                <marker date="1499351940553" expanded="true" signature="91679:91696" ph="..." />
+                <marker date="1499351940553" expanded="true" signature="91679:91714" ph="..." />
+                <marker date="1499351940553" expanded="true" signature="91679:91727" ph="..." />
               </folding>
             </state>
           </provider>
@@ -40,8 +43,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="235">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1081,7 +1084,7 @@
       <workItem from="1499334853869" duration="39000" />
       <workItem from="1499334924419" duration="30000" />
       <workItem from="1499334964369" duration="9000" />
-      <workItem from="1499334980977" duration="11059000" />
+      <workItem from="1499334980977" duration="11656000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore file&#10;">
       <created>1499334748623</created>
@@ -1139,11 +1142,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499350621711</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="spring actuator">
+      <created>1499351367505</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1499351367505</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11902000" />
+    <option name="totallyTimeSpent" value="12499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -1216,7 +1226,8 @@
     <MESSAGE value="added post request&#10;" />
     <MESSAGE value="added a get with ResponseEntity from spring" />
     <MESSAGE value="xml negotiations" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml negotiations" />
+    <MESSAGE value="spring actuator" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring actuator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1409,12 +1420,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="306">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
-            <marker date="1499350944111" expanded="true" signature="90881:90898" ph="..." />
-            <marker date="1499350944111" expanded="true" signature="90881:90916" ph="..." />
-            <marker date="1499350944111" expanded="true" signature="90881:90929" ph="..." />
+            <marker date="1499351940553" expanded="true" signature="91679:91696" ph="..." />
+            <marker date="1499351940553" expanded="true" signature="91679:91714" ph="..." />
+            <marker date="1499351940553" expanded="true" signature="91679:91727" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1611,8 +1622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="235">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding />
         </state>
       </provider>
