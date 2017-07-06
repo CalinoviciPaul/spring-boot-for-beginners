@@ -47,4 +47,6 @@ Temporary Items
 .apdisk
 .idea/*
 .mvn/*
+gulp
 
+.idea/workspace.xml
