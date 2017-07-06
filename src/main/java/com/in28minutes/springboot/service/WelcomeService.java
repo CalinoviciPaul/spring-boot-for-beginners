@@ -1,4 +1,4 @@
-package com.in28minutes.springboot;
+package com.in28minutes.springboot.service;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-class WelcomeService {
+public class WelcomeService {
 
     public String retrieveWelcomeMessage() {
         //Complex Method

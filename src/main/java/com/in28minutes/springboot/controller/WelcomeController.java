@@ -1,5 +1,7 @@
-package com.in28minutes.springboot;
+package com.in28minutes.springboot.controller;
 
+
+import com.in28minutes.springboot.service.WelcomeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
