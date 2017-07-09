@@ -20,7 +20,7 @@ import org.springframework.hateoas.config.EnableHypermediaSupport;
 
 import java.io.IOException;
 
-@ComponentScan("com.in28minutes")
+//@ComponentScan("com.in28minutes")
 @SpringBootApplication
 public class Application {
 

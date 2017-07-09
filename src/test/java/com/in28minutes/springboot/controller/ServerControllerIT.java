@@ -1,3 +1,5 @@
+package com.in28minutes.springboot.controller;
+
 import com.in28minutes.springboot.Application;
 import com.in28minutes.springboot.jpa.User;
 import com.in28minutes.springboot.model.Question;
@@ -123,7 +125,7 @@ public class ServerControllerIT {
     @Test
     public void retrieveSurveyQuestion() throws Exception {
 
-        String expected = "{id:Question1,description:Largest Country in the World,correctAnswer:Russia,options:[India,Russia,United States,China]}";
+        String expected = "{id:\'Question1\',description:\'Largest Country in the World\',correctAnswer:\'Russia\',options:[\'India\',\'Russia\',\'United States\',\'China\']}";
 
         ResponseEntity<String> response = template.exchange(
                 createUrl("/surveys/Survey1/questions/Question1"),
