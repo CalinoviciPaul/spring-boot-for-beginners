@@ -20,6 +20,9 @@ import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+
 /**
  * Created by IrianLaptop on 7/8/2017.
  */
@@ -129,4 +132,18 @@ public class ServerControllerIT {
 
         JSONAssert.assertEquals(expected, response.getBody(), false);
     }
+
+
+    @Test
+    public void createSurveyQuestion() throws Exception {
+        Question question = new Question("DOESN'T MATTER", "Smallest Number",
+                "1", Arrays.asList("1", "2", "3", "4"));
+
+        ResponseEntity<String> response = template.exchange(
+                createUrl("/surveys/Survey1/questions/"), HttpMethod.POST,
+                new HttpEntity<Question>(question, headers), String.class);
+
+        assertTrue(response.getHeaders().get(HttpHeaders.LOCATION).get(0).contains("/surveys/Survey1/questions/"));
+    }
+
 }
