@@ -1,5 +1,7 @@
 package com.in28minutes.springboot.controller;
 
+import com.in28minutes.springboot.error.AuthorizationError;
+import com.in28minutes.springboot.error.OtherError;
 import com.in28minutes.springboot.model.Question;
 import com.in28minutes.springboot.service.SurveyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,7 @@ public class SurveyController {
 
     @GetMapping("/surveys/{surveyId}/questions")
     public List<Question> retrieveQuestions(@PathVariable String surveyId) {
+        /*if(true) throw new OtherError();*/
         return surveyService.retrieveQuestions(surveyId);
     }
 
