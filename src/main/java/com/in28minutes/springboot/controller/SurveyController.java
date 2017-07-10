@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.net.URI;
 import java.util.List;
 
@@ -24,7 +26,9 @@ public class SurveyController {
 
     @GetMapping("/surveys/{surveyId}/questions")
     public List<Question> retrieveQuestions(@PathVariable String surveyId) {
-        /*if(true) throw new OtherError();*/
+/*
+        if(true) throw new AuthorizationError();
+*/
         return surveyService.retrieveQuestions(surveyId);
     }
 

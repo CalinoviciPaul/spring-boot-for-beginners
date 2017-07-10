@@ -17,9 +17,12 @@ import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.Resources;
 import org.springframework.http.*;
 import org.springframework.test.context.junit4.SpringRunner;
+import sun.nio.cs.US_ASCII;
 
 import java.lang.reflect.Type;
+import java.nio.charset.Charset;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.List;
 
 import static org.junit.Assert.assertThat;
@@ -37,10 +40,19 @@ public class ServerControllerIT {
 
     HttpHeaders headers = new HttpHeaders();
 
+    private String createHttpHeadersWithBasicAuthentication(String userId, String password) {
+        HttpHeaders headers = new HttpHeaders();
+        String auth = userId +":" + password;
+        byte[] encodedAuth = Base64.getEncoder().encode(auth.getBytes(Charset.forName("US-ASCII")));
+        String headerValue ="Basic "+ new String(encodedAuth);
+        return headerValue;
+    }
+
     private TestRestTemplate template = new TestRestTemplate();
 
     @Before
     public void setupJSONAcceptType() {
+        headers.add("Authorization", createHttpHeadersWithBasicAuthentication("user1","secret1"));
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
     }
 
@@ -52,7 +64,6 @@ public class ServerControllerIT {
         TestRestTemplate restTemplate = new TestRestTemplate();
        // String output = restTemplate.getForObject(url, String.class);
 
-        HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
 
         HttpEntity entity = new HttpEntity<String>(null, headers);
