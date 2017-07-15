@@ -5,6 +5,7 @@ import com.in28minutes.springboot.error.OtherError;
 import com.in28minutes.springboot.model.Question;
 import com.in28minutes.springboot.service.SurveyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -23,6 +24,10 @@ public class SurveyController {
 
     @Autowired
     private SurveyService surveyService;
+
+    @Autowired
+    @Qualifier(value = "dummy")
+    private String dummy;
 
     @GetMapping("/surveys/{surveyId}/questions")
     public List<Question> retrieveQuestions(@PathVariable String surveyId) {
